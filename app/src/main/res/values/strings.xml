@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ejercicio1PMDM</string>
+    <string name="textView_pulsarBoton">Pulsa el botón!</string>
+    <string name="button_aceptar">Aceptar</string>
 </resources>
