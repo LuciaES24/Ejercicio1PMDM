@@ -7,10 +7,13 @@ import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+    lateinit var botonLateInit : Button
+    lateinit var textLateInit : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /**
         var contaPulsaciones = 0
         val texto : TextView = findViewById(R.id.textoMostrar)
         val boton : Button = findViewById(R.id.boton_aceptar)
@@ -40,11 +43,10 @@ class MainActivity : AppCompatActivity() {
                 toast.show()
             }
         }
-        /**
+        **/
+
         //Segunda versión con variables de clase y lateinit
         var contaPulsaciones = 0
-        lateinit var botonLateInit : Button
-        lateinit var textLateInit : TextView
 
         fun pulsarLateInit(){
             botonLateInit = findViewById(R.id.boton_aceptar)
@@ -74,8 +76,7 @@ class MainActivity : AppCompatActivity() {
                 toast.show()
             }
         }
-        **/
-        boton.setOnClickListener { pulsar() }
-        //botonLateInit.setOnClickListener { pulsarLateInit() }
+        //boton.setOnClickListener { pulsar() }
+        botonLateInit.setOnClickListener { pulsarLateInit() }
     }
 }
