@@ -22,6 +22,4 @@
         android:onClick="pulsar"
         android:enabled="true">
     </Button>
-
-
 </LinearLayout>
