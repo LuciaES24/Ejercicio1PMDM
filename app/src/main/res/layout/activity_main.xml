@@ -10,7 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textView_pulsarBoton"
-        android:textSize="30sp">
+        android:textSize="30sp"
+        android:layout_marginBottom="32dp">
     </TextView>
 
     <Button
