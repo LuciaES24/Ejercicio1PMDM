@@ -15,11 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /**
-        var contaPulsaciones = 0
+
         val texto : TextView = findViewById(R.id.textoMostrar)
         val boton : Button = findViewById(R.id.boton_aceptar)
 
+        //Primera versión
         fun pulsar(){
             contaPulsaciones++
             var tamano = 0
@@ -45,8 +45,9 @@ class MainActivity : AppCompatActivity() {
                 toast.show()
             }
         }
-        **/
 
+
+        /**
         //Segunda versión con variables de clase y lateinit
         botonLateInit = findViewById(R.id.boton_aceptar)
         textLateInit = findViewById(R.id.textoMostrar)
@@ -75,7 +76,8 @@ class MainActivity : AppCompatActivity() {
                 toast.show()
             }
         }
-        //boton.setOnClickListener { pulsar() }
-        botonLateInit.setOnClickListener { pulsarLateInit() }
+        **/
+        boton.setOnClickListener { pulsar() }
+        //botonLateInit.setOnClickListener { pulsarLateInit() }
     }
 }

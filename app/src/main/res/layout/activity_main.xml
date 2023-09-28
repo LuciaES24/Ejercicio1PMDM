@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:textSize="22sp"
         android:text="@string/button_aceptar"
-        android:onClick="pulsarLateInit"
+        android:onClick="pulsar"
         android:enabled="true">
     </Button>
 </LinearLayout>
