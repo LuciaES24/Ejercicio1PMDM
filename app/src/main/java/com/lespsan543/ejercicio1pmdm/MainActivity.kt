@@ -7,8 +7,10 @@ import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
-    lateinit var botonLateInit : Button
-    lateinit var textLateInit : TextView
+    private lateinit var botonLateInit : Button
+    private lateinit var textLateInit : TextView
+    var contaPulsaciones = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -46,12 +48,9 @@ class MainActivity : AppCompatActivity() {
         **/
 
         //Segunda versión con variables de clase y lateinit
-        var contaPulsaciones = 0
-
+        botonLateInit = findViewById(R.id.boton_aceptar)
+        textLateInit = findViewById(R.id.textoMostrar)
         fun pulsarLateInit(){
-            botonLateInit = findViewById(R.id.boton_aceptar)
-            textLateInit = findViewById(R.id.textoMostrar)
-
             contaPulsaciones++
             var tamano = 0
             if (contaPulsaciones<=5){
